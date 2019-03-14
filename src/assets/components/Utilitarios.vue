@@ -10,7 +10,7 @@
 			</v-layout>
 			
 			<v-layout row wrap>
-				<v-flex xs12 sm4 md4 v-for="utility in utilities" v-bind:key="utility.title">
+				<v-flex xs12 sm4 md3 v-for="utility in utilities" v-bind:key="utility.title">
 					<v-card class="utility">
 						<v-card-title class="light-blue darken-4 white--text">
 							<v-icon dark left>{{utility.icon }}</v-icon> &nbsp; {{ utility.title }}

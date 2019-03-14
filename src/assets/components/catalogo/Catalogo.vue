@@ -4,7 +4,7 @@
       <v-layout row>
         <v-flex md12 class="section-title">
           <h3>Catálogo de Serviços</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quam, libero.</p>
+          <p>Pesquise e solicite os serviços disponibilizados pelo NTI.</p>
         </v-flex>
       </v-layout>
 
@@ -63,7 +63,7 @@
                     {{ service.name | uppercase}}
                   </p>
                 </div>
-                <v-card color="blue-grey darken-4">
+                <v-card flat color="blue-grey darken-4">
                     <v-card-text>
                       <v-layout row wrap>
                         <v-flex x12 md8>

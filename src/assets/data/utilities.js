@@ -2,6 +2,18 @@ export default {
     utilities:
     [
         {
+            title: 'GRU Biblioteca',
+            description: 'Emição da GRU para pagamento de multas referentes a biblioteca',
+            icon: 'insert_drive_file',
+            link: 'http://central.arapiraca.ufal.br/gru-sibi/'
+        },
+        {
+            title: 'GRU Restaurante Universitário',
+            description: 'Emição da GRU para pagamento de refeições referentes ao Restaurante universitário',
+            icon: 'insert_drive_file',
+            link: 'http://central.arapiraca.ufal.br/gru-ru/'
+        },
+        {
             title: 'Atendimento',
             description: ' GLPI - Controle de tíquetes, incidentes e requisições',
             icon: 'phone_in_talk',
@@ -54,7 +66,9 @@ export default {
             description: 'Cadastro, consulta, emissão e envio de documentos oficiais',
             icon: 'insert_drive_file',
             link: 'https://ud.arapiraca.ufal.br/?db=ud&action=login'
-        }
+        },
+
+        
     ],
 
     utilities_links: [
