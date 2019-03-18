@@ -265,37 +265,37 @@ export default {
           [
             {
                 name: 'ACESSO À INTERNET SEM FIO',
-                description: 'Dentro do espaço físico do Campus Arapiraca da Ufal, é fornecido acesso a Internet sem fio por meio da rede UfalMovel',
+                description: 'Dentro do espaço físico do Campus Arapiraca, é fornecido acesso a Internet sem fio por meio das redes ArapiracaUfal, UfalMovel, OutC, OutD, Ufal5G',
                 target_public: 'Comunidade Acadêmica e visitantes',
                 requirements: 'Dispositivo computacional que permita acesso a rede sem fio. Smartphone, tablet, notebook ou outro',
-                quick_help: 'Senha de acesso arasong'
+                quick_help: 'Senha de acesso ufalsong'
             },
             {
                 name: 'RAMAL INSTITUCIONAL PELO CELULAR',
-                description: 'Número de ramal de 4 dígitos a partir do qual se pode ligar para outro ramal ou receber ligações de outros ramais de toda a Ufal',
+                description: 'Permite ao smartphone realizar ligações para outros ramais da Ufal e também receber ligações.',
                 target_public: 'Servidores',
-                requirements: 'Preenchimento de formulário de solicitação, dispositivo computacional que permita telefonia SIP (smartphone, por exemplo)',
+                requirements: 'Preenchimento de formulário de solicitação e possuir um smartphone que ofereça supoerte ao aplicativo.',
                 quick_help: ''
             },
             {
                 name: 'ACESSO REMOTO A MÁQUINA INTERNA',
-                description: 'Acesso externo (via VNC, RDP ou SSH) à máquina localizada dentro do Campus Arapiraca',
+                description: 'Acesso externo a máquina localizada dentro do Campus Arapiraca',
                 target_public: 'Servidores e alunos autorizados por servidores',
-                requirements: 'Equipamento com IP fixo em conformidade com políticas internas de Redes; serviço VNC, RDP ou SSH devidamente configurado; solicitação e criação de usuário para esta finalidade no setor de Redes',
+                requirements: 'Equipamento com IP fixo em conformidade com políticas internas de Redes; serviço VNC, RDP ou SSH devidamente configurado; solicitação e criação de usuário para esta finalidade no setor de Redes ',
                 quick_help: ''
             },
             {
-                name: 'EXPOSIÇÃO DE SERVIÇO WEB PARA FORA',
-                description: 'Exposição de serviço web interno ao Campus Arapiraca, para que se torne facilmente acessível por qualquer computador fora da instituição.',
+                name: 'DISPONIBILIZAÇÃO DE SERVIÇO WEB',
+                description: 'Disponibilização de serviço web interno ao Campus Arapiraca na internet.',
                 target_public: 'Servidores',
-                requirements: 'Equipamento com serviço HTTP devidamente configurado; sistema respondendo a partir de um subdiretório (por exemplo my.ara/sistema e não my.ara/); solicitação no setor de Redes',
+                requirements: ' Equipamento com serviço HTTP devidamente configurado; sistema respondendo a partir de um subdiretório (por exemplo my.ara/sistema e não my.ara/); solicitação no setor de Redes ',
                 quick_help: ''
             },
             {
                 name: 'PÁGINA DE WIKI',
-                description: 'Wiki próprio sob gestão do solicitante.',
+                description: 'Página para divulgação de conteúdo sob gestão do solicitante.',
                 target_public: 'Servidores',
-                requirements: 'Solicitação não conflitante com o conjunto de informações públicas oficialmente nas páginas da Ufal mantidas pela Ascom; solicitação no setor de Redes',
+                requirements: 'Solicitação não conflitante com o conjunto de informações públicas oficialmente nas páginas da Ufal mantidas pela Ascom; solicitação no setor de Redes.',
                 quick_help: ''
             },
             {
@@ -307,51 +307,51 @@ export default {
             },
             {
                 name: 'AGENDA TELEFÔNICA',
-                description: 'Agenda com todos os ramais físicos do Campus Arapiraca (e polos) e do Campus do Sertão (e polo)',
+                description: 'Agenda com todos os ramais físicos do Campus Arapiraca (e polos) e do Campus do Sertão (e polo).',
                 target_public: 'Sociedade',
                 requirements: 'Acesso a sistemas.arapiraca.ufal.br/telefones',
                 quick_help: ''
             },
             {
                 name: 'MONITORAMENTO DE TRÁFEGO WEB',
-                description: 'Visualização da estrutura de rede física do Campus Arapiraca, tráfego e diagnóstico de problemas de redes.',
+                description: 'Visualização da estrutura de rede física do Campus Arapiraca e o status dos equipamentos.',
                 target_public: 'Comunidade Acadêmica',
                 requirements: 'Acesso a central.arapiraca.ufal.br/ e seleção da opção "Tráfego"',
                 quick_help: ''
             },
             {
-                name: 'SERVIDOR DE ARQUIVOS WINDOWS',
-                description: 'Serviço que permite acesso a arquivos centralizados em um servidor SMB, bem como a criação de grupos para compartilhamento desses arquivos',
+                name: 'SERVIDOR DE ARQUIVOS',
+                description: 'Serviço que permite acesso e compartilhamento de arquivos',
                 target_public: 'Servidores',
-                requirements: 'Acesso a partir da rede do Campus Arapiraca - Sede, solicitação no setor de Redes',
+                requirements: 'Solicitação no setor de Redes. Para acessar o usuário deve estar na rede do Campus Arapiraca - Sede.',
                 quick_help: ''
             },
             {
                 name: 'ARQUIVOS EM NUVEM',
-                description: 'Servidor de arquivos acessível via interface web ou via sincronização automática, com serviços associados, como calendário, agenda de contatos e compartilhamento de arquivos',
+                description: 'Servidor de arquivos acessível via interface web ou via sincronização automática, com serviços associados, como calendário, agenda de contatos e compartilhamento de arquivos.',
                 target_public: 'Servidores',
                 requirements: 'Solicitação no setor de Redes; acesso a central.arapiraca.ufal.br/drive',
                 quick_help: ''
             },
             {
                 name: 'BLOG',
-                description: 'Serviço de blog acessível dentro do campus ou, a critério do solicitante, de qualquer lugar via Internet',
+                description: 'Serviço de blog acessível via Internet',
                 target_public: 'Servidores',
                 requirements: 'Solicitação não conflitante com o conjunto de informações públicas oficialmente nas páginas da Ufal mantidas pela Ascom; solicitação no setor de Redes',
                 quick_help: ''
             },
             {
                 name: 'CONFERÊNCIA EM AUDIO',
-                description: 'Serviço de conversação em grupo, com compressão e recurso de gravação da conversa pelos próprios participantes',
+                description: 'erviço de conversação em grupo com recurso de gravação da conversa pelos próprios participantes',
                 target_public: 'Comunidade Acadêmica',
-                requirements: 'Instalação de cliente Mumble; acesso via cliente Mumble a central.arapiraca.ufal.br, na porta 64738',
-                quick_help: ''
+                requirements: 'Todos os participantes devem ter o cliente Mumble instalado.',
+                quick_help: 'Instalar cliente Mumble; acessar via cliente Mumble a central.arapiraca.ufal.br, na porta 64738  '
             },
             {
                 name: 'MÁQUINA VIRTUAL',
-                description: 'Máquina virtual para auxiliar em atividade técnica ou acadêmica',
+                description: 'Disponibilização de uma máquina para auxiliar em atividade técnica ou acadêmica',
                 target_public: 'Servidores',
-                requirements: 'Disponibilidade de recursos nos nós de virtualização (no setor de redes); solicitação no setor',
+                requirements: 'Solicitar no setor de Redes.',
                 quick_help: ''
             }
           ]
