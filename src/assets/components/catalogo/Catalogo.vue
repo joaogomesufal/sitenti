@@ -56,10 +56,7 @@
             <v-expansion-panel>
               <v-expansion-panel-content v-for="service in filteredNetworkServices" v-bind:key="service.name">
                 <div slot="header">
-                  <p v-if="windowWidth < 450">
-                    {{ service.name | uppercase | limite }}
-                  </p>
-                  <p v-else>
+                  <p>
                     {{ service.name | uppercase}}
                   </p>
                 </div>
@@ -122,10 +119,7 @@
             <v-expansion-panel>
               <v-expansion-panel-content v-for="service in filteredMaintenanceServices" v-bind:key="service.name">
                 <div slot="header">
-                  <p v-if="windowWidth < 450">
-                    {{ service.name | uppercase | limite }}
-                  </p>
-                  <p v-else>
+                  <p>
                     {{ service.name | uppercase }}
                   </p>
                 </div>
@@ -188,10 +182,7 @@
             <v-expansion-panel>
               <v-expansion-panel-content v-for="service in filteredSystemsServices" v-bind:key="service.name">
                 <div slot="header">
-                  <p v-if="windowWidth < 450">
-                    {{ service.name | uppercase | limite }}
-                  </p>
-                  <p v-else>
+                  <p>
                     {{ service.name | uppercase}}
                   </p>
                 </div>
