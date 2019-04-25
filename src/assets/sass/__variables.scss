@@ -1,7 +1,11 @@
 
 $menu-bg-color: rgb(4, 32, 56);
+$side-menu-bg-color: linear-gradient(to left, rgba(4, 32, 56, .0), rgba(4, 52, 100, .4), rgb(4, 52, 100));
 $menu-bd-color: rgb(7, 36, 59);
 $menu-ft-color: #FFFFFF;
+
+$background-gradient: linear-gradient(to bottom, rgba(4, 32, 56, .0), rgba(4, 52, 100, .6), rgb(4, 52, 100));
+$background-gradient2: linear-gradient(to bottom, rgba(4, 32, 56, .0), rgba(4, 100, 150, .6), rgb(4, 100, 152));
 
 $section-ft-color: $menu-bg-color;
 
@@ -13,5 +17,5 @@ $utility-ft-color:rgb(7, 36, 59);
 $utility-header-ft-color: #fff;
 $utility-header-bg-color: rgb(4, 32, 56);
 
-$employee-ft-color-name: $menu-bd-color;
-$employee-ft-color-function: #555;
+$employee-ft-color-name: rgb(240, 240, 240);
+$employee-ft-color-function: rgb(4, 144, 244);

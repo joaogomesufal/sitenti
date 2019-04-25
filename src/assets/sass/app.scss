@@ -82,6 +82,28 @@
 	}
 }
 
+
+#side-menu {
+  background: $side-menu-bg-color;
+  box-shadow: none;
+  border: 0px;
+
+  .v-list.theme--light {
+    background: none;
+    .v-list__tile {
+      color: #fff;
+      i {
+        color: #fff;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
 .theme--light.v-navigation-drawer, .theme--light .v-navigation-drawer {
 
 	.v-list__tile {
@@ -142,10 +164,19 @@
 /*Section de Utilitários*/
 
 #utilitarios {
-	
-	background: linear-gradient(to right, rgb(147, 190, 255), rgb(174, 248, 236));
+
+  background: $background-gradient2, url('../images/banner.png');
+  background-attachment: fixed;
+  background-size: 100%;
+	background-color: rgb(147, 190, 255);
 	position: relative;
-	
+
+  .section-title {
+    h3 {
+      color: $employee-ft-color-function;
+    }
+    color: $employee-ft-color-name;
+  }
 	&::after {
 		content: '';
 		width: 100%;
@@ -196,11 +227,18 @@
 /*Section da Equipe*/
 #equipe {
 	padding: 20px 0px;;
-	background-color: #fff;
+	background-color: #042038;
+  background: $background-gradient, url('../images/banner.png');
 	background-attachment: fixed;
 	background-size: 100%;
-	background-repeat: repeat;
 	position: relative;
+
+  .section-title {
+    h3 {
+      color: $employee-ft-color-function;
+    }
+    color: $employee-ft-color-name;
+  }
 
 	&::after {
 		content: '';

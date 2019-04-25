@@ -3,18 +3,19 @@
     
     <v-navigation-drawer id="side-menu" v-model="sideNav" app>
       <v-list>
+        <v-list-tile @click.native.stop="sideNav = !sideNav" class="close-side">
+          <v-list-tile-action>
+            <v-icon>arrow_left</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>Esconder</v-list-tile-content>
+        </v-list-tile>
         <v-list-tile v-for="item in menuItems" :key="item.title">
           <v-list-tile-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-tile-action>
           <a :href="item.href"><v-list-tile-content>{{ item.title }}</v-list-tile-content></a>
         </v-list-tile>
-        <v-list-tile @click.native.stop="sideNav = !sideNav" class="close-side">
-          <v-list-tile-action>
-            <v-icon>close</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>Fechar</v-list-tile-content>
-        </v-list-tile>
+
       </v-list>
     </v-navigation-drawer>
 
