@@ -7,6 +7,7 @@
 				<utilitarios></utilitarios>
 				<catalogo ></catalogo>
 				<equipe ></equipe>
+        <publicacoes></publicacoes>
 			</main>
 		</v-app>
 	</div>
@@ -18,6 +19,7 @@ import Setores from './assets/components/Setores.vue';
 import Utilitarios from './assets/components/Utilitarios.vue';
 import Equipe from './assets/components/Equipe.vue';
 import Catalogo from './assets/components/catalogo/Catalogo.vue';
+import Publicacoes from './assets/components/Publicacoes.vue';
 
 export default {
 	name: 'app',
@@ -34,7 +36,7 @@ export default {
 		'equipe': Equipe,
 		'catalogo': Catalogo,
 		'menu-nav': MenuNav,
-
+    'publicacoes': Publicacoes
 	},
 }
 </script>

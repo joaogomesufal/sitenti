@@ -48,7 +48,7 @@
 
       <v-layout row wrap>
         <v-flex md12 mb-1 v-show="services.networks.status">
-          <v-card>
+          <v-card flat>
             <v-card-title>
               <h3>{{ services.networks.name }}</h3>
             </v-card-title>
@@ -111,7 +111,7 @@
         </v-flex>
 
         <v-flex md12 mb-1 v-show="services.maintenance.status">
-          <v-card>
+          <v-card flat>
             <v-card-title>
               <h3>{{ services.maintenance.name }}</h3>
             </v-card-title>
@@ -174,7 +174,7 @@
         </v-flex>
 
         <v-flex md12 mb-1 v-show="services.systems.status">
-          <v-card>
+          <v-card flat>
             <v-card-title>
               <h3>{{ services.systems.name }}</h3>
             </v-card-title>

@@ -8,8 +8,8 @@
 				</v-flex>
 			</v-layout>
 
-			<v-layout row wrap class="plus" v-for="setor in setores" v-bind:key="setor.nome">
-				<v-flex sm12 xs12 md4 class="employee" v-for="integrante in setor.integrantes" v-bind:key="integrante.nome">
+			<v-layout row wrap class="plus" v-for="setor in setores" v-bind:key="setor.nome" justify-center>
+				<v-flex sm4 xs12 md3 class="employee" v-for="integrante in setor.integrantes" v-bind:key="integrante.nome" my-4>
 						<div class="employee-avatar">
 							<img :src="integrante.imagem" alt="">
 						</div>

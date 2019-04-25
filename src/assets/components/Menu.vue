@@ -74,6 +74,7 @@
           {icon: 'widgets', title: 'Utilítários', href: '#utilitarios'},
           {icon: 'import_contacts', href: '', title: 'Serviços', href: '#catalogo-servicos'},
           {icon: 'group',title: 'Equipe', href: '#equipe'},
+          {icon: 'account_balance',title: 'Publicações', href: '#publicacoes'},
         ],
       }
     },

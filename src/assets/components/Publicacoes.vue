@@ -8,15 +8,17 @@
         </v-flex>
       </v-layout>
 
-      <v-layout row wrap class="plus" v-for="setor in setores" v-bind:key="setor.nome">
-        <v-flex sm12 xs12 md4 class="employee" v-for="integrante in setor.integrantes" v-bind:key="integrante.nome">
-          <div class="employee-avatar">
-            <img :src="integrante.imagem" alt="">
-          </div>
-          <div class="employee-description">
-            <h3 class="name">{{integrante.nome}}</h3>
-            <h4 class="function">{{integrante.cargo}}</h4>
-          </div>
+      <v-layout row wrap>
+        <v-flex xs12 sm6 md4 lg3 v-for="(publication, index) in publications" v-bind:key="index">
+          <v-card class="publication-card" flat>
+            <v-card-title>
+              <a :href="publication.url">
+                <v-icon>picture_as_pdf</v-icon>
+                <span>Acessar:</span>
+                {{publication.title}}
+              </a>
+            </v-card-title>
+          </v-card>
         </v-flex>
       </v-layout>
 
@@ -25,44 +27,53 @@
 </template>
 
 <script>
+    import pdf from 'vue-pdf'
+    import publications_data from '../data/publications'
+    const { publications } = publications_data
     export default {
         name: "Publicacoes.vue",
+        components: {
+          pdf
+        },
         data() {
-          publications: [
-            {
-              title: '',
-              description: '',
-              url: ''
-            },
-
-            {
-              title: '',
-              description: '',
-              url: ''
-            },
-
-            {
-              title: '',
-              description: '',
-              url: ''
-            },
-
-            {
-              title: '',
-              description: '',
-              url: ''
-            },
-
-            {
-              title: '',
-              description: '',
-              url: ''
-            }
-          ]
+          return {
+            publications: publications
+          }
         }
     }
 </script>
 
-<style scoped>
+<style lang="scss">
+  .v-card.publication-card {
+    background: rgb(4, 32, 56);
+    min-height: 120px;
+    margin: 10px;
 
+    .v-card__title {
+
+
+
+      a {
+        text-decoration: none;
+        color: #64D2C9;
+        font-size: 16px;
+        font-weight: 300;
+
+        &:active,&:focus,&:hover,&select {
+          background: #14558C;
+        }
+
+        i {
+          color: crimson;
+        }
+
+        span {
+          font-weight: bold;
+          color: white;
+        }
+      }
+    }
+
+
+  }
 </style>
