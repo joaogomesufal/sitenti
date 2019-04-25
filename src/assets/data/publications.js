@@ -2,11 +2,11 @@ export default {
     publications: [
       {
         title: 'Universidade Digital: preservando e disponibilizando a produção científica através do Repositório Institucional;',
-        url: './dist/pdf/Universidade_Digital_Repositorio_Institucional.pd'
+        url: './dist/pdf/Universidade_Digital_Repositorio_Institucional.pdf'
       },
       {
         title: 'UniversidadeDigital: descomplicandoogerenciamentoda monitoriaetutoria ;',
-        url: './dist/pdf/Descomplicando_o_gerenciamento_monitoria.pd'
+        url: './dist/pdf/Descomplicando_o_gerenciamento_monitoria.pdf'
       },
 
       {
