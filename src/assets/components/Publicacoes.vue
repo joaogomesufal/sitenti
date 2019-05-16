@@ -27,13 +27,11 @@
 </template>
 
 <script>
-    import pdf from 'vue-pdf'
     import publications_data from '../data/publications'
     const { publications } = publications_data
     export default {
         name: "Publicacoes.vue",
         components: {
-          pdf
         },
         data() {
           return {
