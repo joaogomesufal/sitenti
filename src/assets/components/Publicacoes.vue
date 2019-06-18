@@ -16,6 +16,7 @@
                 <v-icon>picture_as_pdf</v-icon>
                 <span>Acessar:</span>
                 {{publication.title}}
+                ({{publication.year}})
               </a>
             </v-card-title>
           </v-card>

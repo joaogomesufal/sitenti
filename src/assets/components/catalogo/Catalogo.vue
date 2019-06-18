@@ -28,13 +28,15 @@
             <v-flex md6>
                 <v-card-title>Filtros</v-card-title>
                 <v-card-text>
-                  <v-layout row wrap> 
-                    <v-flex md4 xs12>
-                      <v-switch hide-details label="Manutenção" v-model="services.networks.status" color="light-blue lighten-2"></v-switch>
+                  <v-layout row wrap>
+                     <v-flex md4 xs12>
+                      <v-switch hide-details label="Redes" v-model="services.networks.status" color="light-blue lighten-2"></v-switch>
                     </v-flex>
+                     
                     <v-flex md4 xs12>
-                      <v-switch hide-details label="Redes" v-model="services.maintenance.status" color="light-blue lighten-2"></v-switch>
+                      <v-switch hide-details label="Manutenção" v-model="services.maintenance.status" color="light-blue lighten-2"></v-switch>
                     </v-flex>
+                   
                     <v-flex md4 xs12>
                       <v-switch hide-details label="Sistemas" v-model="services.systems.status" color="light-blue lighten-2"></v-switch>
                     </v-flex>
@@ -249,6 +251,55 @@ export default {
       windowWidth: 0,
       services: 
       {
+        maintenance: {
+          status: true,
+          name: "Manutenção",
+          data: [
+            {
+                name: "Instalação ou substituição Computador",
+                description: "Será instalado ou substituido o computador no setor desejado",
+                target_public: "Dicentes e Técnicos	",
+                requirements: "Saber se tem computador disponível para a instalação/substituição",
+                quick_help: "Para verificar se tem computadores disponiveis entrar em contato com o ramal: 1828",
+            },
+            {
+                name: "Instalação / atualização dos aplicativos do computador",
+                description: "Serão instalados ou atualizados os aplicativos do computador",
+                target_public: "Técnicos e Dicentes	",
+                requirements: "O aplicativo ter licença de uso	",
+                quick_help: "",
+            },
+            {
+                name: "Instalação / atualização dos aplicativos no Laboratório",
+                description: "Serão instalados ou atualizados os aplicativos em todos os computadores do laboratório especificado",
+                target_public: "Técnicos e Dicentes	",
+                requirements: "O aplicativo ter licença de uso e especificar o laboratório",
+                quick_help: "",
+            },
+            {
+                name: "Criação / Alteração dos usuários locais do computador",
+                description: "Serão criados ou alterados os usuários locais do computador",
+                target_public: "Técnicos e Dicentes	",
+                requirements: "",
+                quick_help: "",
+            },
+            {
+                name: "Testar Equipamento	",
+                description: "Será realizado o diagnóstico e avaliação do equipamento solicitado",
+                target_public: "Técnicos e Dicentes	",
+                requirements: "O equipamento pertercer a UFAL - Campus Arapiraca			",
+                quick_help: "",
+            },
+            {
+                name: "Formatar o Computador	",
+                description: "Serão apagados todos os dados do computador e instalado o sistema operacioal de acordo com a licença permitida						",
+                target_public: "Técnicos e Dicentes	",
+                requirements: "Ter realizado o backup dos dados	",
+                quick_help: "",
+            },
+          ],
+        },
+
         networks: {
           status: true,
           name: "Redes",
@@ -348,54 +399,6 @@ export default {
           ]
         },
 
-        maintenance: {
-          status: true,
-          name: "Manutenção",
-          data: [
-            {
-                name: "Instalação ou substituição Computador",
-                description: "Será instalado ou substituido o computador no setor desejado",
-                target_public: "Dicentes e Técnicos	",
-                requirements: "Saber se tem computador disponível para a instalação/substituição",
-                quick_help: "Para verificar se tem computadores disponiveis entrar em contato com o ramal: 1828",
-            },
-            {
-                name: "Instalação / atualização dos aplicativos do computador",
-                description: "Serão instalados ou atualizados os aplicativos do computador",
-                target_public: "Técnicos e Dicentes	",
-                requirements: "O aplicativo ter licença de uso	",
-                quick_help: "",
-            },
-            {
-                name: "Instalação / atualização dos aplicativos no Laboratório",
-                description: "Serão instalados ou atualizados os aplicativos em todos os computadores do laboratório especificado",
-                target_public: "Técnicos e Dicentes	",
-                requirements: "O aplicativo ter licença de uso e especificar o laboratório",
-                quick_help: "",
-            },
-            {
-                name: "Criação / Alteração dos usuários locais do computador",
-                description: "Serão criados ou alterados os usuários locais do computador",
-                target_public: "Técnicos e Dicentes	",
-                requirements: "",
-                quick_help: "",
-            },
-            {
-                name: "Testar Equipamento	",
-                description: "Será realizado o diagnóstico e avaliação do equipamento solicitado",
-                target_public: "Técnicos e Dicentes	",
-                requirements: "O equipamento pertercer a UFAL - Campus Arapiraca			",
-                quick_help: "",
-            },
-            {
-                name: "Formatar o Computador	",
-                description: "Serão apagados todos os dados do computador e instalado o sistema operacioal de acordo com a licença permitida						",
-                target_public: "Técnicos e Dicentes	",
-                requirements: "Ter realizado o backup dos dados	",
-                quick_help: "",
-            },
-          ],
-        },
         systems: {
           status: true,
           name: "Sistemas",
